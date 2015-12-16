@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BillAndTip</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="total">Total</string>
+    <string name="tip">Tip</string>
+    <string name="tipVal">0</string>
+    <string name="tipTotal">Total:</string>
+    <string name="finalTotal">0</string>
+    <string name="finalTipTotal">0</string>
+    <string name="Split">Split</string>
+    <string name="numPeople">0 People</string>
+    <string name="splitPeople">1</string>
+    <string name="perPersonText">Per Person Bill</string>
+    <string name="perPersonBill">$ 0</string>
+    <string name="perPersonHint">$ 0</string>
+    <string name="Enter">Enter</string>
+    <string name="tipTotalFinal">$ 0</string>
+
+</resources>

@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/material_blue_grey_950"
+    android:id="@+id/main_layout">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/total"
+        android:layout_marginTop="33dp"
+        android:hint="@string/total"
+        android:gravity="center_horizontal"
+        android:numeric="decimal"
+        android:textColor="#fff"
+        android:textColorHint="#ffffffff"
+        android:typeface="normal"
+        android:layout_alignParentTop="true"
+        android:editable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tip"
+        android:id="@+id/tip"
+        android:layout_below="@+id/total"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff" />
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipSeek"
+        android:layout_below="@+id/tip"
+        android:layout_centerHorizontal="true"
+        android:max="50"
+        android:progress="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tipVal"
+        android:text="@string/tipVal"
+        android:textColor="#fff"
+        android:layout_alignRight="@+id/total"
+        android:layout_alignEnd="@+id/total"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:editable="true"
+        android:layout_alignTop="@+id/tipSeek"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tipTotal"
+        android:id="@+id/tipTotalText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:editable="false"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/tipTotal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tipTotal"
+        android:layout_below="@+id/tipSeek"
+        android:layout_toRightOf="@+id/tipTotalText"
+        android:layout_toEndOf="@+id/tipTotalText"
+        android:textColor="#fff"
+        android:text="@string/tipTotalFinal"
+        android:numeric="decimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Split"
+        android:id="@+id/Split"
+        android:layout_below="@+id/tipTotalText"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff" />
+
+    <SeekBar
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/splitSeek"
+        android:layout_below="@+id/Split"
+        android:layout_centerHorizontal="true"
+        android:max="24"
+        android:progress="0"
+        android:indeterminate="false"
+        style="@style/AppTheme" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/numPeople"
+        android:editable="true"
+        android:gravity="right"
+        android:hint="@string/numPeople"
+        android:numeric="integer"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:text="@string/splitPeople"
+        android:layout_alignTop="@+id/splitSeek"
+        android:layout_alignRight="@+id/tipVal"
+        android:layout_alignEnd="@+id/tipVal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/perPersonText"
+        android:id="@+id/perPersonText"
+        android:textColor="#fff"
+        android:layout_below="@+id/splitSeek"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/perPersonBill"
+        android:id="@+id/perPersonBill"
+        android:layout_below="@+id/perPersonText"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:editable="true"
+        android:hint="@string/perPersonHint"
+        android:numeric="integer|decimal"
+        android:textColorHint="#fff" />
+
+</RelativeLayout>
